@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="topnav">
+     <a  href="index.html">Home</a>
+     <a href="bio.html">Bio</a>
+     <a href="collection.html">Collection</a>
+     <a class="active" href="contact.html">Contact</a>
+    </div>
+	<div id="head">
+  <h1>Contact/Feedback</h1>
+
+	</div>
+<form action="/action_page.php" onSubmit="return validateform(this);">
+	<fieldset>
+		<legend>Contact</legend>
+	First name:<br>
+		<input type="text" name="firstname" required>
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" required>
+	<br>
+	Phone number:<br>
+	<input type="number" name="number" required>
+	<br>
+	Email Id:<br>
+	<input type="text" name="emailid" required>
+	<br><br>
+
+ </fieldset>
+
+
+
+<fieldset>
+		<legend>Feedback</legend>
+		Rate the site(Out of 10):<br>
+		<input type="number" name="rat" min="0" max="10">
+		<input type="button" onclick="alert('Thank you! Visit Us Again')" value="Click!">
+		<br><br>
+		
+
+</fieldset>
+<br>
+<input type="submit" value="Submit">
+	<input type="reset">
+</form>
+	<p>
+<a href=index.html>
+		Back to home
+	</a>
+</p>
+
+<script>
+	function validateform(fm){
+		if(fm.rat.value ==""){
+			alert("Please rate this site. Thank you!!");
+			return false;
+		}
+	}
+	
+
+</script>
+<a href="https://www.facebook.com/anishgelal56" target="_blank">For my facebook Click Here</a> 
+<a href="https://www.instagram.com/gelalanish65" target="_blank">For my instagram Click Here</a>
+<a href="https://github.com/anishgelal01" target="_blank">For my github CLick Here</a>
+
+
+
+<footer>@copyright2019.GelalAnish.widescreen</footer>
+</body>
+</html>
